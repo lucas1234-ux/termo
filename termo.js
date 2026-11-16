@@ -42,14 +42,18 @@ function verificar() {
 
     for (let i = 0; i < qtdLetras; i++) {
         let caixa = document.forms["termo"+rodada]["letra" + i].value.toUpperCase();
+        let campo = document.forms["termo"+rodada]["letra" + i];
 
         if (caixa == segredo[i]) {
             posicaoCerta++;
-            document.forms["termo"+rodada]["letra" + i].style.backgroundColor = "#d4af37";
+            campo.style.background = "#d4af37";
+            campo.style.color = "#111111";
         } else if(segredo.includes(caixa)) {
-            document.forms["termo"+rodada]["letra" + i].style.backgroundColor = "#f2d675";
+            campo.style.background = "#f2d675";
+            campo.style.color = "#111111";
         } else {
-            document.forms["termo"+rodada]["letra" + i].style.backgroundColor = "#c62828";
+            campo.style.background = "#c62828";
+            campo.style.color = "#ffffff";
         }
 
         tentativa += caixa;
