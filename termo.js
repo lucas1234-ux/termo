@@ -45,13 +45,13 @@ function verificar() {
 
         if (caixa == segredo[i]) {
             posicaoCerta++;
-            document.forms["termo"+rodada]["letra" + i].style.backgroundColor = "LightGreen";
+            document.forms["termo"+rodada]["letra" + i].style.backgroundColor = "#d4af37";
         } else if(segredo.includes(caixa)) {
-            document.forms["termo"+rodada]["letra" + i].style.backgroundColor = "yellow";
+            document.forms["termo"+rodada]["letra" + i].style.backgroundColor = "#f2d675";
         } else {
-            document.forms["termo"+rodada]["letra" + i].style.backgroundColor = "red";
-        }    
-        
+            document.forms["termo"+rodada]["letra" + i].style.backgroundColor = "#c62828";
+        }
+
         tentativa += caixa;
     }
 
@@ -81,7 +81,6 @@ function verificar() {
             alert("Fim de Jogo")
         }
     }
-        
 
     alert(tentativa);
 

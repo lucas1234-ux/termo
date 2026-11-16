@@ -6,19 +6,19 @@
     <title>Termo - Futurista</title>
     <style>
         :root {
-            --bg-1: #081b2b;
-            --bg-2: #112d45;
-            --panel: rgba(11, 32, 49, 0.9);
-            --panel-strong: rgba(14, 39, 58, 0.96);
-            --blue-1: #0d3b5b;
-            --blue-2: #1a5d8a;
-            --blue-3: #6bb0d9;
-            --white: #edf4fb;
-            --muted: #afc5d7;
-            --yellow-1: #f7d35d;
-            --yellow-2: #ffea9b;
-            --border: rgba(191, 220, 255, 0.18);
-            --shadow: rgba(0, 0, 0, 0.45);
+            --bg-1: #0b0b0b;
+            --bg-2: #1a1a1a;
+            --panel: rgba(15, 15, 15, 0.9);
+            --panel-strong: rgba(24, 24, 24, 0.96);
+            --red-1: #8f1d1d;
+            --red-2: #c62828;
+            --red-3: #ef5350;
+            --white: #f5f5f5;
+            --muted: #d0d0d0;
+            --gold-1: #d4af37;
+            --gold-2: #f2d675;
+            --border: rgba(212, 175, 55, 0.25);
+            --shadow: rgba(0, 0, 0, 0.55);
         }
 
         * { box-sizing: border-box; }
@@ -27,8 +27,8 @@
             margin: 0;
             min-height: 100%;
             background:
-                radial-gradient(circle at top, rgba(26, 93, 138, 0.7), transparent 40%),
-                linear-gradient(180deg, #061722 0%, var(--bg-1) 40%, var(--bg-2) 100%);
+                radial-gradient(circle at top, rgba(143, 29, 29, 0.4), transparent 40%),
+                linear-gradient(180deg, #050505 0%, var(--bg-1) 40%, var(--bg-2) 100%);
             color: var(--white);
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -69,9 +69,9 @@
             letter-spacing: 0.55em;
             font-size: 0.7rem;
             font-weight: 800;
-            color: var(--yellow-1);
+            color: var(--gold-1);
             text-transform: uppercase;
-            opacity: 0.9;
+            opacity: 0.95;
         }
 
         #jogo {
@@ -80,11 +80,11 @@
             width: min(100%, 470px);
             padding: 18px;
             border: 1px solid var(--border);
-            background: linear-gradient(180deg, rgba(11, 28, 41, 0.9), rgba(8, 18, 27, 0.92));
+            background: linear-gradient(180deg, rgba(20, 20, 20, 0.96), rgba(5, 5, 5, 0.96));
             box-shadow:
-                0 20px 50px rgba(0, 0, 0, 0.45),
+                0 20px 50px rgba(0, 0, 0, 0.55),
                 inset 0 0 0 1px rgba(255,255,255,0.04),
-                inset 0 0 30px rgba(107, 176, 217, 0.1);
+                inset 0 0 30px rgba(143, 29, 29, 0.18);
             border-radius: 12px;
         }
 
@@ -93,10 +93,10 @@
             display: block;
             width: 100%;
             height: 10px;
-            background: linear-gradient(90deg, var(--yellow-1), #fff6bf, var(--yellow-1));
+            background: linear-gradient(90deg, var(--gold-1), var(--gold-2), var(--gold-1));
             border-radius: 12px 12px 0 0;
             margin-bottom: 18px;
-            box-shadow: 0 0 18px rgba(247, 211, 93, 0.35);
+            box-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
         }
 
         #jogo form {
@@ -106,7 +106,7 @@
             gap: 10px;
             margin: 0 0 12px;
             padding: 10px 0 18px;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
             position: relative;
         }
 
@@ -119,24 +119,24 @@
         #jogo form input[type="text"] {
             width: 52px;
             height: 58px;
-            border: 1px solid rgba(172, 210, 255, 0.25);
+            border: 1px solid rgba(212, 175, 55, 0.4);
             border-radius: 8px;
-            background: linear-gradient(180deg, rgba(18, 43, 62, 0.9), rgba(9, 25, 38, 0.82));
+            background: linear-gradient(180deg, #242424, #101010);
             color: var(--white);
             font-size: 1.7rem;
             font-weight: 800;
             text-align: center;
             text-transform: uppercase;
-            box-shadow: inset 0 2px 8px rgba(0,0,0,0.35);
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
             transition: all 0.2s ease;
         }
 
         #jogo form input[type="text"]:focus {
             outline: none;
-            border-color: var(--yellow-1);
+            border-color: var(--gold-1);
             box-shadow:
-                0 0 0 3px rgba(247, 211, 93, 0.16),
-                inset 0 2px 8px rgba(0,0,0,0.35);
+                0 0 0 3px rgba(212, 175, 55, 0.2),
+                inset 0 2px 8px rgba(0,0,0,0.5);
             transform: translateY(-1px);
         }
 
@@ -145,20 +145,20 @@
             padding: 14px 18px;
             border: none;
             border-radius: 8px;
-            background: linear-gradient(180deg, var(--yellow-2), var(--yellow-1));
-            color: #0b1a2a;
+            background: linear-gradient(180deg, var(--gold-2), var(--gold-1));
+            color: #111111;
             font-size: 0.72rem;
             font-weight: 900;
             letter-spacing: 0.14em;
             text-transform: uppercase;
             cursor: pointer;
-            box-shadow: 0 8px 18px rgba(247, 211, 93, 0.28);
+            box-shadow: 0 8px 18px rgba(212, 175, 55, 0.25);
             transition: transform 0.18s ease, box-shadow 0.18s ease;
         }
 
         #jogo form input[type="submit"]:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 20px rgba(247, 211, 93, 0.34);
+            box-shadow: 0 12px 20px rgba(212, 175, 55, 0.35);
         }
 
         h2 {
@@ -166,28 +166,27 @@
             z-index: 1;
             width: min(100%, 470px);
             margin: 24px 0 10px;
-            color: var(--yellow-1);
+            color: var(--gold-1);
             font-size: 0.75rem;
             letter-spacing: 0.24em;
             text-transform: uppercase;
             font-weight: 800;
         }
 
-        #Letras\ utilizadas,
-        [id="Letras utilizadas"] {
+        #letrasUtilizadas {
             position: relative;
             z-index: 1;
             width: min(100%, 470px);
             min-height: 58px;
             padding: 16px 18px;
-            border: 1px solid rgba(255,255,255,0.08);
+            border: 1px solid rgba(212, 175, 55, 0.22);
             border-radius: 10px;
-            background: rgba(11, 22, 33, 0.75);
+            background: rgba(12, 12, 12, 0.88);
             color: var(--white);
             font-weight: 700;
             letter-spacing: 0.18em;
             word-break: break-word;
-            box-shadow: inset 0 0 18px rgba(9, 28, 39, 0.55);
+            box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.6);
         }
 
         @media (max-width: 520px) {
